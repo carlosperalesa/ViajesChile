@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    console.log('ready');
 
     //Smooth Scroll
     $("a").on('click', function (event) {
@@ -39,5 +40,7 @@ $(document).ready(function () {
     $('#aceptar').on('click', function(){
         $('#miModal').modal('hide');
     });
+
+
     
 });

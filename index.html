@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- jquery-3 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/334a740400.js" crossorigin="anonymous"></script>
     <!-- bootstrap -->
@@ -18,11 +20,10 @@
         crossorigin="anonymous"></script>
     <!-- css -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <!-- jquery-3 -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="./assets/img/viajes.svg">
     <title>ViajesChile</title>
+
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                                 <a class="nav-link active" href="#quienessomos">Quiénes Somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#destacados">Destacados</a>
+                                <a class="nav-link active" href="#desid">Destacados</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="#contacto">Contacto</a>
@@ -145,49 +146,49 @@
             </div>
         </div>
         <!-- Destacados -->
-        <div id="desid">
-            <h3>DESTACADOS</h3>
-            <hr class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12 padcard">
-                        <div class="card color">
-                            <img src="assets/img/card1.jpg" class="card-img-top imgcard" alt="card1">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
+        <h3 id="desid">DESTACADOS</h3>
+        <br>
+        <hr class="container">
+        <div id="dessec" class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 padcard">
+                    <div class="card color">
+                        <img src="assets/img/card1.jpg" class="card-img-top imgcard" alt="card1">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 padcard">
-                        <div class="card color">
-                            <img src="assets/img/card2.jpg" class="card-img-top imgcard" alt="card2">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 padcard">
+                    <div class="card color">
+                        <img src="assets/img/card2.jpg" class="card-img-top imgcard" alt="card2">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 padcard">
-                        <div class="card color">
-                            <img src="assets/img/card3.jpg" class="card-img-top imgcard" alt="card3">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 padcard">
+                    <div class="card color">
+                        <img src="assets/img/card3.jpg" class="card-img-top imgcard" alt="card3">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 padcard">
-                        <div class="card color">
-                            <img src="assets/img/card4.jpg" class="card-img-top imgcard" alt="card4">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 padcard">
+                    <div class="card color">
+                        <img src="assets/img/card4.jpg" class="card-img-top imgcard" alt="card4">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div><br>
         <!-- Contactame -->
         <div>
@@ -229,7 +230,8 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button id="aceptar" type="button" class="btn btn-primary">Aceptar</button>
-                                </div><hr>
+                                </div>
+                                <hr>
                             </div>
                         </div>
                     </div>
@@ -239,25 +241,25 @@
     </main>
 
     <footer>
-    <!-- RRSS -->
-    <div id="rrss" class="container d-md-flex">
-        <div class="col-md-6">
-            <h2>VIAJES CHILE</h2>
+        <!-- RRSS -->
+        <div id="rrss" class="container d-md-flex">
+            <div class="col-md-6">
+                <h2>VIAJES CHILE</h2>
+            </div>
+            <div class="col-md-6 justify-content-end">
+                <a href="https://github.com/" target="_blank"> <i class="fa-brands fa-square-github icon fa-2x"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"> <i
+                        class="fa-brands fa-linkedin icon fa-2x"></i></a>
+                <a href="https://twitter.com/home?lang=es" target="_blank"> <i
+                        class="fa-brands fa-square-twitter icon fa-2x"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"> <i
+                        class="fa-brands fa-square-facebook icon fa-2x"></i></a>
+            </div>
         </div>
-        <div class="col-md-6 justify-content-end">
-            <a href="https://github.com/" target="_blank"> <i class="fa-brands fa-square-github icon fa-2x"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank"> <i class="fa-brands fa-linkedin icon fa-2x"></i></a>
-            <a href="https://twitter.com/home?lang=es" target="_blank"> <i
-                    class="fa-brands fa-square-twitter icon fa-2x"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"> <i
-                    class="fa-brands fa-square-facebook icon fa-2x"></i></a>
-        </div>
-    </div>
     </footer>
-    
+
     <!-- javascript -->
     <script src="./assets/js/js.js"></script>
 
 </body>
-
 </html>
